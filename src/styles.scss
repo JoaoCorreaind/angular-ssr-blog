@@ -5,6 +5,31 @@ body {
   color: #333;
 }
 
+header {
+  background-color: #000;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    max-width: 85px;
+    max-height: 85px;
+  }
+}
+
+footer {
+  background-color: #343a40 !important;
+  color: white !important;
+  text-align: center !important;
+  padding: 10px 0 !important;
+  position: fixed !important;
+  width: 100% !important;
+  bottom: 0 !important;
+}
+
 h1,
 h2,
 h3,
@@ -24,4 +49,86 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.post-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .card-content {
+    padding: 20px;
+    h2 {
+      font-size: 1.5em;
+      margin: 0;
+    }
+    p {
+      font-size: 1em;
+      color: #555;
+    }
+    .read-more {
+      display: inline-block;
+      margin-top: 10px;
+      color: #007bff;
+      text-decoration: none;
+      &:hover {
+        color: #0056b3;
+      }
+    }
+  }
+}
+
+.container-details {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  h1 {
+    font-family: "Arial", sans-serif;
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .post-image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  p {
+    font-family: "Georgia", serif;
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+  }
+  .back-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #007bff;
+    &:hover {
+      color: #0056b3;
+    }
+  }
+}
+.container-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
 }

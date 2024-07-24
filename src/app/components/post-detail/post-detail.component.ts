@@ -8,7 +8,6 @@ import { Post } from '../../models/post';
   standalone: true,
   imports: [RouterModule],
   templateUrl: './post-detail.component.html',
-  styleUrl: './post-detail.component.scss',
 })
 export class PostDetailComponent implements OnInit {
   post?: Post;

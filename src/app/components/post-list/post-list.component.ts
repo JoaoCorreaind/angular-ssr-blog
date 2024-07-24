@@ -10,7 +10,6 @@ import { Post } from '../../models/post';
   standalone: true,
   imports: [RouterModule, CommonModule, PostCardComponent],
   templateUrl: './post-list.component.html',
-  styleUrl: './post-list.component.scss',
 })
 export class PostListComponent implements OnInit {
   public posts: Post[] = [];
